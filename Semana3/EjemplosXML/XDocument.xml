@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--This is a comment-->
+<Biblioteca>
+  <Libro id="1">
+    <Titulo>El Principito</Titulo>
+    <Autor>Antoine de Saint-Exupéry</Autor>
+  </Libro>
+  <Libro id="2">
+    <Titulo>1984</Titulo>
+    <Autor>George Orwell</Autor>
+  </Libro>
+</Biblioteca>

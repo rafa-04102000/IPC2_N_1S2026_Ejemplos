@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tienda>
+  <Metadatos>
+    <FechaActualizacion>2026-02-07</FechaActualizacion>
+    <Sucursal>Guatemala Central</Sucursal>
+  </Metadatos>
+
+  <Inventario>
+    <Producto id="CPU-001" categoria="Procesador" oferta="true">
+      <Nombre>AMD Ryzen 7 5800X</Nombre>
+      <Precio moneda="USD">300.00</Precio>
+      <Stock>15</Stock>
+      <Detalles>
+        <Nucleos>8</Nucleos>
+        <Frecuencia>3.8GHz</Frecuencia>
+      </Detalles>
+    </Producto>
+
+    <Producto id="CPU-002" categoria="Procesador" oferta="false">
+      <Nombre>Intel Core i9-12900K</Nombre>
+      <Precio moneda="USD">550.00</Precio>
+      <Stock>4</Stock> <Detalles>
+        <Nucleos>16</Nucleos>
+        <Frecuencia>3.2GHz</Frecuencia>
+      </Detalles>
+    </Producto>
+
+    <Producto id="GPU-101" categoria="Grafica" oferta="false">
+      <Nombre>NVIDIA RTX 4090</Nombre>
+      <Precio moneda="USD">1600.00</Precio>
+      <Stock>2</Stock>
+      <Detalles>
+        <VRAM>24GB</VRAM>
+      </Detalles>
+    </Producto>
+
+    <Producto id="GPU-102" categoria="Grafica" oferta="true">
+      <Nombre>AMD Radeon RX 7600</Nombre>
+      <Precio moneda="USD">270.00</Precio>
+      <Stock>50</Stock>
+      <Detalles>
+        <VRAM>8GB</VRAM>
+      </Detalles>
+    </Producto>
+    
+    <Producto id="ACC-001" categoria="Accesorio" oferta="true">
+      <Nombre>Pasta Térmica</Nombre>
+      <Precio moneda="USD">10.00</Precio>
+      <Stock>100</Stock>
+    </Producto>
+  </Inventario>
+</Tienda>

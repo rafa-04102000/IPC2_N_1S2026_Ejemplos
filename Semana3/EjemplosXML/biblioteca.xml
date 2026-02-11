@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Biblioteca>
+  <Libro id="1">
+    <Titulo>El Quijote</Titulo>
+    <Autor>Miguel de Cervantes</Autor>
+  </Libro>
+</Biblioteca>

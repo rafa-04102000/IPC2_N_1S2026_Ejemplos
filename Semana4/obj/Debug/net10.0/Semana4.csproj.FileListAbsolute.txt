@@ -1,0 +1,15 @@
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\bin\Debug\net10.0\Semana4.exe
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\bin\Debug\net10.0\Semana4.deps.json
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\bin\Debug\net10.0\Semana4.runtimeconfig.json
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\bin\Debug\net10.0\Semana4.dll
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\bin\Debug\net10.0\Semana4.pdb
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\Semana4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\Semana4.AssemblyInfoInputs.cache
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\Semana4.AssemblyInfo.cs
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\Semana4.csproj.CoreCompileInputs.cache
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\Semana4.sourcelink.json
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\Semana4.dll
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\refint\Semana4.dll
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\Semana4.pdb
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\Semana4.genruntimeconfig.cache
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\Semana4\obj\Debug\net10.0\ref\Semana4.dll

@@ -33,4 +33,28 @@ public class EjemploXDocument
         doc.Save("EjemplosXML/XDocument.xml");
     }
 
+    public void LeerDocumento(string rutaArchivo)
+    {
+        if (!File.Exists(rutaArchivo))
+        {
+            Console.WriteLine("Archivo no encontrado. Por favor, verifique la ruta y el nombre del archivo.");
+            return;
+        }
+
+        XDocument doc = XDocument.Load(rutaArchivo);
+
+        var libros = from libro in doc.Descendants("Libro")
+                     select new
+                     {
+                         Id = libro.Attribute("id")?.Value,
+                         Titulo = libro.Element("Titulo")?.Value,
+                         Autor = libro.Element("Autor")?.Value
+                     };
+
+        foreach (var libro in libros)
+        {
+            Console.WriteLine($"ID: {libro.Id}, Título: {libro.Titulo}, Autor: {libro.Autor}");
+        }
+    }
+
 }

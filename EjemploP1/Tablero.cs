@@ -12,6 +12,9 @@ public class Tablero
     // esto es una matriz, la rejilla es una matriz
     public Rejilla PatronInicial;
 
+    public ListaPeriodos ListaPeriodos;
+    // Contendra todos los periodos ya evaluados, cada periodo es una rejilla, entonces se puede hacer una lista de periodos, y cada periodo tiene su propia rejilla
+
     public Tablero Siguiente;
 
     public Tablero Anterior;
@@ -22,6 +25,7 @@ public class Tablero
         NumeroPeriodos = numeroPeriodos;
         TamanoRejilla = tamanoRejilla;
         PatronInicial = null;
+        ListaPeriodos = null;
         Siguiente = null;
         Anterior = null;
     }

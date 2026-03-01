@@ -1,0 +1,56 @@
+digraph ListaCircular {
+
+    rankdir=LR; // Orientación de izquierda a derecha
+    bgcolor="#F0F3F4"; // Color de fondo del grafo
+
+    // para los nodos    
+    node [
+        shape=record,
+        style=filled,
+        fillcolor="#E8F4F8",
+        fontname="Helvetica",
+        fontsize=12,
+        penwidth=1,
+    ]
+
+    // para las aristas
+    edge [
+        color="#2C3E50",
+        arrowhead=vee,
+        penwidth=1,
+    ]
+
+    // 1 Declaración de nodos
+
+    Nodo1 [label="{ <dato> 15 | <sig> • }"]
+    Nodo2 [label="{ <dato> 42 | <sig> • }"];
+    Nodo3 [label="{ <dato> 89 | <sig> • }"];
+    Nodo4 [label="{ <dato> 10 | <sig> • }"];
+
+    // Nodo cabeza
+
+    Cabeza [shape=plaintext, style="", fillcolor="", fontcolor="#E74C3C", fontsize=14, label="Cabeza"];
+
+    // 2. Conexiones (ARISTAS)
+
+    Cabeza -> Nodo1:dato [color="#E74C3C", style=dotted];
+
+
+    // Conectamos los nodos
+    // Le decimos a Graphviz: "sal del puerto <sig> y entra al puerto <dato>"
+
+    Nodo1:sig -> Nodo2:dato;
+    Nodo2:sig -> Nodo3:dato;
+    Nodo3:sig -> Nodo4:dato;
+
+    // 3. El enalce circular: el último nodo apunta al primero
+
+    Nodo4:sig -> Nodo1:dato [
+        color="#27AE60",
+        style=dashed,
+        label="Enlace circular",
+        fontcolor="#27AE60",
+        fontsize=10
+    ];
+
+}

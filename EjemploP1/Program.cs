@@ -13,7 +13,7 @@ while (opcion != 6)
     Console.WriteLine("2. Lista de Tableros");
     Console.WriteLine("3. Mostrar Patron Inicial de un Tablero");
     Console.WriteLine("4. Mostrar Grafica de un Tablero");
-    Console.WriteLine("5. Realizar los N periodos del tablero");
+    Console.WriteLine("5. Realizar periodos del tablero para mostrar su evolución");
     Console.WriteLine("6. Salir");
     Console.WriteLine("--------------------------------");
     Console.WriteLine("Seleccione una opción: ");
@@ -60,19 +60,36 @@ while (opcion != 6)
             }
             break;
         case 4:
-            Console.WriteLine("Lo miramos la proxima semana, el que se quedo al final de la clase lo puede copiar de la grabación");
+            Console.WriteLine("Ingreese el nombre del tablero del cual desea mostrar su grafica");
             Console.WriteLine("--------------------------------");
 
-            // Lo miramos la proxima semana, el que se quedo al final de la clase lo puede copiar de la grabación
-            // solo tiene que tener instalado graphviz en su sistema, de igual forma lo vemos la proxima semana  
-
+            string? tableroAGraficar = Console.ReadLine();
+            Console.WriteLine("--------------------------------");
+            Tablero? tableroE = tableros.buscarTablero(tableroAGraficar);
+            if (tableroE != null)
+            {
+                tableroE.PatronInicial.graficarRejillaV1(tableroE.Nombre);
+            }
+            else
+            {
+                Console.WriteLine("Tablero no encontrado.");
+            }
             break;
         case 5:
-            Console.WriteLine("Lo miramos la proxima semana, se usa recursividad por si alguien esta interasado en ver como se hace, de igual forma lo vemos la proxima semana");
+            Console.WriteLine("Ingresar el nombre del tablero del cual desea realizar los periodos");
             Console.WriteLine("--------------------------------");
 
-            // lo vemos la proxima semana
-
+            string? tableroPeriodos = Console.ReadLine();
+            Console.WriteLine("--------------------------------");
+            Tablero? tableroP = tableros.buscarTablero(tableroPeriodos);
+            if (tableroP != null)
+            {
+                tableroP.ListaPeriodos.realizarPeriodos(tableroP.Nombre, tableroP.NumeroPeriodos);
+            }
+            else
+            {
+                Console.WriteLine("Tablero no encontrado.");
+            }
             break;
         case 6:
             Console.WriteLine("Saliendo del programa.");
@@ -98,7 +115,7 @@ void CargarDatosTableros(string nombreArchivo)
     XDocument doc = XDocument.Load($"{rutaCarptea}{nombreArchivo}.xml");
 
     var listaTableros = from tablero in doc.Descendants("tablero")
-                            // el select new es una forma de proyectar los datos que queremos obtener del XML, en este caso, estamos creando un objeto anónimo con las propiedades Nombre, NumeroPeriodos, TamanoRejilla y Rejilla, que se corresponden con los elementos del XML. Esto nos permite trabajar con los datos de una manera más estructurada y fácil de manejar en nuestro programa.
+                        // el select new es una forma de proyectar los datos que queremos obtener del XML, en este caso, estamos creando un objeto anónimo con las propiedades Nombre, NumeroPeriodos, TamanoRejilla y Rejilla, que se corresponden con los elementos del XML. Esto nos permite trabajar con los datos de una manera más estructurada y fácil de manejar en nuestro programa.
                         select new
                         {
                             // aca solo puedo poner declaraciones de variables
@@ -116,7 +133,7 @@ void CargarDatosTableros(string nombreArchivo)
                                       {
                                           Fila = int.Parse(fila ?? "0"),
                                           Columna = int.Parse(columna ?? "0")
-                                      },            
+                                      },
                         };
 
     foreach (var tablero in listaTableros)
@@ -149,6 +166,9 @@ void CargarDatosTableros(string nombreArchivo)
         // {
         //     Console.WriteLine($"Fila: {celda.Fila}, Columna: {celda.Columna}");
         // }
+
+        // creo la lista de periodos, y le paso como parametro la rejilla inicial
+        nuevoTablero.ListaPeriodos = new ListaPeriodos(rejilla);
 
         // agrego el tablero a la lista de tableros
         tableros.append(nuevoTablero);

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EjemploP2</title>
+    <script type="importmap"></script>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <script src="https://cdn.jsdelivr.net/npm/@@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/EjemploP2.styles.css" asp-append-version="true" />
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen text-gray-800 font-sans">
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-800 shadow-lg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight drop-shadow-md">
+                Proyecto 2
+            </h1>
+            <p class="mt-2 text-blue-200 text-sm font-medium tracking-wide">
+                Estructuras de Datos • Desarrollo Web
+            </p>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col">
+        
+        <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-xl border border-gray-100 flex-grow">
+            @RenderBody()
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-8 border-t border-gray-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
+            <p class="text-base font-semibold tracking-wide text-gray-100">
+                Laboratorio de Introducción a la Programación y Computación 2 - Sección N
+            </p>
+            <p class="text-sm text-gray-400 font-medium">
+                Auxiliar Tobías Rafael Zamora Santos
+            </p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

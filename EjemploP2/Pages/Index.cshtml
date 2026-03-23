@@ -1,0 +1,75 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "IPC2 Proyecto2";
+}
+
+<div class="border-b border-gray-200 pb-4 mb-8">
+    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Panel de Control: Sistema de Drones</h2>
+    <p class="mt-2 text-sm text-gray-600 font-medium">Cargue el archivo de configuración XML para inicializar las estructuras de datos.</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+    
+    <div class="lg:col-span-4 flex flex-col gap-6">
+        
+        <form method="post" enctype="multipart/form-data" class="bg-indigo-50 p-6 rounded-2xl border border-indigo-100 shadow-sm flex flex-col gap-4">
+            <h3 class="font-bold text-indigo-900 text-lg border-b border-indigo-200 pb-2">1. Procesamiento XML</h3>
+            
+            <div>
+                <label for="archivoXml" class="block text-sm font-semibold text-gray-700 mb-2">Seleccionar Archivo de Entrada</label>
+                <input type="file" id="archivoXml" name="archivoXml" accept=".xml"
+                       class="block w-full text-sm text-gray-500
+                file:mr-4 file:py-2.5 file:px-4
+                file:rounded-lg file:border-0
+                file:text-sm file:font-semibold
+                file:bg-indigo-600 file:text-white
+                hover:file:bg-indigo-700 hover:file:cursor-pointer
+                cursor-pointer border border-gray-300 rounded-lg bg-white shadow-sm" />
+            </div>
+
+            <button type="submit" asp-page-handler="CargarXml" class="w-full mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-all flex justify-center items-center gap-2">
+                📥 Cargar XML de Entrada
+            </button>
+            
+            <button type="submit" asp-page-handler="GenerarXml" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-all flex justify-center items-center gap-2">
+                📤 Generar un XML de Salida
+            </button>
+        </form>
+
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col gap-3">
+            <h3 class="font-bold text-gray-800 text-lg border-b border-gray-200 pb-2 mb-2">2. Módulos del Sistema</h3>
+            
+            <a asp-page="/GestionDrones" class="w-full bg-white hover:bg-blue-50 text-blue-700 font-bold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-all text-center">
+                🚁 Gestión de Drones
+            </a>
+            
+            <a asp-page="/GestionSistemas" class="w-full bg-white hover:bg-blue-50 text-blue-700 font-bold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-all text-center">
+                📡 Gestión de Sistemas de Drones
+            </a>
+            
+            <a asp-page="/GestionMensajes" class="w-full bg-white hover:bg-blue-50 text-blue-700 font-bold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-all text-center">
+                ✉️ Gestión de Mensajes
+            </a>
+            
+            <a asp-page="/Ayuda" class="w-full mt-4 bg-slate-700 hover:bg-slate-800 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-all text-center">
+                ❓ Ayuda
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="lg:col-span-8 flex flex-col h-full">
+        <div class="bg-slate-800 rounded-t-xl py-2 px-4 border-b border-slate-700 flex justify-between items-center">
+            <span class="text-slate-300 font-mono text-sm">Visor_XML.xml</span>
+            <div class="flex gap-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+        </div>
+        
+        <textarea readonly class="w-full flex-grow min-h-[500px] p-6 bg-slate-900 text-green-400 font-mono text-sm md:text-base rounded-b-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-indigo-500 overflow-auto resize-none" placeholder="">@Model.ContenidoXml</textarea>
+    </div>
+
+</div>

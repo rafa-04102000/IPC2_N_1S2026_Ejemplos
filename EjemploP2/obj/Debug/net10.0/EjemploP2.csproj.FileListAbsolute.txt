@@ -22,7 +22,6 @@ C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\D
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\scopedcss\bundle\EjemploP2.styles.css
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\scopedcss\projectbundle\EjemploP2.bundle.scp.css
-C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\compressed\735oixs79c-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\compressed\hwo5mvhnap-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\compressed\zaayddl32k-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\compressed\7zhh0vndtk-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -97,3 +96,7 @@ C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\D
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\EjemploP2.pdb
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\EjemploP2.genruntimeconfig.cache
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\ref\EjemploP2.dll
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\compressed\735oixs79c-{0}-5ipweew5fc-5ipweew5fc.gz
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\compressed\sv988foz1q-{0}-nt5jbpbjgg-nt5jbpbjgg.gz
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\compressed\e0e0nidzqd-{0}-nt5jbpbjgg-nt5jbpbjgg.gz
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\obj\Debug\net10.0\compressed\ybs2a24kft-{0}-15sr6ksxz2-15sr6ksxz2.gz

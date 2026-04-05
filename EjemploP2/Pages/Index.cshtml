@@ -4,23 +4,62 @@
     ViewData["Title"] = "IPC2 Proyecto2";
 }
 
-<div class="border-b border-gray-200 pb-4 mb-8">
+<div class="border-b border-gray-200 pb-4 mb-8 text-center">
     <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Panel de Control: Sistema de Drones</h2>
     <p class="mt-2 text-sm text-gray-600 font-medium">Cargue el archivo de configuración XML para inicializar las estructuras de datos.</p>
 </div>
 
+@if (TempData["MensajeExito"] != null)
+{
+    <div class="mb-6 bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg shadow-sm flex items-center justify-between animate-fade-in-down" role="alert">
+        <div class="flex items-center">
+            <span class="text-green-500 text-xl mr-3">✅</span>
+            <p class="text-green-800 font-medium">@TempData["MensajeExito"]</p>
+        </div>
+    </div>
+}
+
+@if (TempData["MensajeReinicio"] != null)
+{
+    <div class="mb-6 bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg shadow-sm flex items-center justify-between animate-fade-in-down" role="alert">
+        <div class="flex items-center">
+            <span class="text-blue-500 text-xl mr-3">🔄</span>
+            <p class="text-blue-800 font-medium">@TempData["MensajeReinicio"]</p>
+        </div>
+    </div>
+}
+
+@if (TempData["MensajeError"] != null)
+{
+    <div class="mb-6 bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg shadow-sm animate-pulse" role="alert">
+        <div class="flex">
+            <div class="flex-shrink-0 mt-0.5">
+                <svg class="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3">
+                <h3 class="text-sm font-bold text-red-800">Error en la validación del archivo</h3>
+                <div class="mt-2 text-sm text-red-700 whitespace-pre-line">
+                    @TempData["MensajeError"]
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
     
-    <div class="lg:col-span-4 flex flex-col gap-6">
+    <div class="lg:col-span-3 flex flex-col gap-6">
         
-        <form method="post" enctype="multipart/form-data" class="bg-indigo-50 p-6 rounded-2xl border border-indigo-100 shadow-sm flex flex-col gap-4">
+        <form method="post" enctype="multipart/form-data" class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100 shadow-sm flex flex-col gap-4">
             <h3 class="font-bold text-indigo-900 text-lg border-b border-indigo-200 pb-2">1. Procesamiento XML</h3>
             
             <div>
-                <label for="archivoXml" class="block text-sm font-semibold text-gray-700 mb-2">Seleccionar Archivo de Entrada</label>
+                <label for="archivoXml" class="block text-sm font-semibold text-gray-700 mb-2">Seleccionar Archivo</label>
                 <input type="file" id="archivoXml" name="archivoXml" accept=".xml"
                        class="block w-full text-sm text-gray-500
-                file:mr-4 file:py-2.5 file:px-4
+                file:mr-4 file:py-2 file:px-3
                 file:rounded-lg file:border-0
                 file:text-sm file:font-semibold
                 file:bg-indigo-600 file:text-white
@@ -28,38 +67,50 @@
                 cursor-pointer border border-gray-300 rounded-lg bg-white shadow-sm" />
             </div>
 
-            <button type="submit" asp-page-handler="CargarXml" class="w-full mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-all flex justify-center items-center gap-2">
-                📥 Cargar XML de Entrada
+            <button type="submit" asp-page-handler="CargarXml" class="w-full mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-lg shadow-md transition-all flex justify-center items-center gap-2 text-sm">
+                📥 Cargar XML
             </button>
             
-            <button type="submit" asp-page-handler="GenerarXml" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-all flex justify-center items-center gap-2">
-                📤 Generar un XML de Salida
+            <button type="submit" asp-page-handler="GenerarXml" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded-lg shadow-md transition-all flex justify-center items-center gap-2 text-sm">
+                📤 Generar Salida
             </button>
         </form>
 
-        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col gap-3">
-            <h3 class="font-bold text-gray-800 text-lg border-b border-gray-200 pb-2 mb-2">2. Módulos del Sistema</h3>
+        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200 shadow-sm flex flex-col gap-3">
+            <h3 class="font-bold text-gray-800 text-lg border-b border-gray-200 pb-2 mb-2">2. Módulos</h3>
             
-            <a asp-page="/GestionDrones" class="w-full bg-white hover:bg-blue-50 text-blue-700 font-bold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-all text-center">
+            <a asp-page="/Vistas/GestionDeDrones" class="w-full bg-white hover:bg-blue-50 text-blue-700 font-bold py-2.5 px-4 border border-blue-200 rounded-lg shadow-sm transition-all text-center text-sm">
                 🚁 Gestión de Drones
             </a>
             
-            <a asp-page="/GestionSistemas" class="w-full bg-white hover:bg-blue-50 text-blue-700 font-bold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-all text-center">
-                📡 Gestión de Sistemas de Drones
+            <a asp-page="/GestionSistemas" class="w-full bg-white hover:bg-blue-50 text-blue-700 font-bold py-2.5 px-4 border border-blue-200 rounded-lg shadow-sm transition-all text-center text-sm">
+                📡 Sistemas de Drones
             </a>
             
-            <a asp-page="/GestionMensajes" class="w-full bg-white hover:bg-blue-50 text-blue-700 font-bold py-3 px-4 border border-blue-200 rounded-lg shadow-sm transition-all text-center">
+            <a asp-page="/GestionMensajes" class="w-full bg-white hover:bg-blue-50 text-blue-700 font-bold py-2.5 px-4 border border-blue-200 rounded-lg shadow-sm transition-all text-center text-sm">
                 ✉️ Gestión de Mensajes
             </a>
             
-            <a asp-page="/Ayuda" class="w-full mt-4 bg-slate-700 hover:bg-slate-800 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-all text-center">
+            <a asp-page="/Ayuda" class="w-full mt-4 bg-slate-700 hover:bg-slate-800 text-white font-bold py-2.5 px-4 rounded-lg shadow-md transition-all text-center text-sm">
                 ❓ Ayuda
             </a>
         </div>
-        
+
+
+        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200 shadow-sm flex flex-col gap-3">
+            <form method="post" class="mt-2">
+                <button type="submit" asp-page-handler="ReiniciarSistema"
+                        class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-all flex justify-center items-center gap-2 text-sm"
+                        onclick="return confirm('¿Estás seguro de que deseas eliminar todos los datos y reiniciar el sistema? Esta acción no se puede deshacer.');">
+                    ⚠️ Reiniciar Sistema
+                </button>
+            </form>
+        </div>
+
+
     </div>
 
-    <div class="lg:col-span-8 flex flex-col h-full">
+    <div class="lg:col-span-9 flex flex-col h-full">
         <div class="bg-slate-800 rounded-t-xl py-2 px-4 border-b border-slate-700 flex justify-between items-center">
             <span class="text-slate-300 font-mono text-sm">Visor_XML.xml</span>
             <div class="flex gap-2">
@@ -71,5 +122,4 @@
         
         <textarea readonly class="w-full flex-grow min-h-[500px] p-6 bg-slate-900 text-green-400 font-mono text-sm md:text-base rounded-b-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-indigo-500 overflow-auto resize-none" placeholder="">@Model.ContenidoXml</textarea>
     </div>
-
 </div>

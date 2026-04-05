@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/Rafael/Documents/Escritorio 2026/IPC2_N_1S2026_Ejemplos/EjemploP2/Pages/Ayuda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXl1ZGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Rafael/Documents/Escritorio 2026/IPC2_N_1S2026_Ejemplos/EjemploP2/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Rafael/Documents/Escritorio 2026/IPC2_N_1S2026_Ejemplos/EjemploP2/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rafael/Documents/Escritorio 2026/IPC2_N_1S2026_Ejemplos/EjemploP2/Pages/Vistas/GestionDeDrones.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzdGFzXEdlc3Rpb25EZURyb25lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Rafael/Documents/Escritorio 2026/IPC2_N_1S2026_Ejemplos/EjemploP2/Pages/_ViewImports.cshtml]

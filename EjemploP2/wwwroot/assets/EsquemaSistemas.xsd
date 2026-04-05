@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="config">
+    <xs:complexType>
+      <xs:sequence>
+        
+        <xs:element name="listaDrones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="dron" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="listaSistemasDrones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="sistemaDrones">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="alturaMaxima" type="xs:unsignedByte" />
+                    <xs:element name="cantidadDrones" type="xs:unsignedByte" />
+                    <xs:element name="contenido">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded">
+                          <xs:element name="dron" type="xs:string" />
+                          <xs:element name="alturas">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="altura">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="valor" type="xs:unsignedByte" use="required" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="nombre" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="listaMensajes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Mensaje">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="sistemaDrones" type="xs:string" />
+                    <xs:element name="instrucciones">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="instruccion">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:unsignedByte">
+                                  <xs:attribute name="dron" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="nombre" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

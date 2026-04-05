@@ -13,10 +13,6 @@ namespace EjemploP2.Pages
             _repositorio = repositorio;
         }
 
-        public void OnGet()
-        {
-            // Al cargar la página por primera vez, no hacemos nada especial
-        }
 
         //Agarramos el XML
         //Propiedad para atrapar el archivo del HTML
@@ -27,14 +23,41 @@ namespace EjemploP2.Pages
         // Propiedad para guardar el texto y mandarlo al Textarea
         public string ContenidoXml { get; set; } = string.Empty;
 
+        public void OnGet()
+        {
+            // Al cargar la página por primera vez, no hacemos nada especial
+            ContenidoXml = _repositorio.textoXml;
+            _repositorio.textoXml = "";
+        }
+
+
         // El método que se ejecuta al darle clic al botón de "Cargar XML"
         public IActionResult OnPostCargarXml()
         {
-            // Le pasamos el archivo a tu Gestor y guardamos el resultado
-            ContenidoXml = _repositorio.LeerArchivoComoString(ArchivoXml!);
+            if (ArchivoXml == null)
+            {
+                TempData["MensajeError"] = "Por favor, seleccione un archivo XML antes de hacer clic en Cargar.";
+                return RedirectToPage();
+            }
 
-            // Recargamos la misma página para que se dibuje el texto
-            return Page();
+            try
+            {
+                _repositorio.CargarValoresXmlSistemas(ArchivoXml);
+
+                _repositorio.LeerArchivoComoStringLocal(ArchivoXml);
+
+                TempData["MensajeExito"] = "Se cargó el archivo XML de forma correcta.";
+
+
+            }
+            catch (Exception ex) {
+                TempData["MensajeError"] = ex.Message;
+                _repositorio.textoXml = "El archivo cargado contenia errore de formato y no pude ser procesado";
+            }
+
+            return RedirectToPage();
+            // Cuando no guardan datos, retrun Page();
+
         }
 
         // El método para el segundo botón (lo dejamos vacío por ahora)
@@ -42,6 +65,14 @@ namespace EjemploP2.Pages
         {
             ContenidoXml = "Función de generar XML en construcción...";
             return Page();
+        }
+
+
+        public IActionResult OnPostReiniciarSistema()
+        {
+            // _repositorio.ReiniciarTodo(); (tu método lógico)
+            TempData["MensajeReinicio"] = "El sistema se ha reiniciado correctamente. Todos los datos han sido borrados.";
+            return RedirectToPage();
         }
     }
 }

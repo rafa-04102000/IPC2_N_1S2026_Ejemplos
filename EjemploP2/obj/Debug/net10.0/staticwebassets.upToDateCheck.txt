@@ -1,3 +1,16 @@
+wwwroot\assets\Entrada.xml
+wwwroot\assets\EntradaSistema.xml
+wwwroot\assets\EsquemaSistemas.xsd
+wwwroot\assets\images\1.jpeg
+wwwroot\assets\images\10.jpeg
+wwwroot\assets\images\2.jpeg
+wwwroot\assets\images\3.jpeg
+wwwroot\assets\images\4.jpeg
+wwwroot\assets\images\5.jpeg
+wwwroot\assets\images\6.jpeg
+wwwroot\assets\images\7.jpeg
+wwwroot\assets\images\8.jpeg
+wwwroot\assets\images\9.jpeg
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
@@ -123,3 +136,6 @@ C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\wwwro
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\wwwroot\assets\Entrada.xml
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\wwwroot\assets\EntradaSistema.xml
+C:\Users\Rafael\Documents\Escritorio 2026\IPC2_N_1S2026_Ejemplos\EjemploP2\wwwroot\assets\EsquemaSistemas.xsd

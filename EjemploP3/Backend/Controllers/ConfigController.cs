@@ -36,5 +36,12 @@ namespace Backend.Controllers
                 return BadRequest($"Error al procesar el archivo: {ex.Message}");
             }
         }
+
+        [HttpPost("resetear")]
+        public IActionResult Borrar()
+        {
+            string resultado = _configService.BorrarDatos();
+            return Ok(resultado);
+        }
     }
 }

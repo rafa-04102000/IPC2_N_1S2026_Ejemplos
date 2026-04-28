@@ -37,6 +37,18 @@
         }
       }
     },
+    "/api/Config/resetear": {
+      "post": {
+        "tags": [
+          "Config"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Consulta/clientes": {
       "get": {
         "tags": [

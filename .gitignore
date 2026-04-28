@@ -1,1 +1,10 @@
 .vscode/
+
+# Excluir carpetas de compilación de .NET
+[Bb]in/
+[Oo]bj/
+.vs/
+
+# Excluir dependencias de React/Node (por si acaso)
+node_modules/
+dist/

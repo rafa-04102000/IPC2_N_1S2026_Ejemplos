@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import F1 from '/F1.jpg';
+// 1. Cambiamos la importación al nuevo archivo
+import Escudo from '/Tux.png';
 
 // Importamos íconos que concuerdan mejor con las opciones del menú
-import { FaCog, FaExchangeAlt, FaSearch, FaChartBar } from "react-icons/fa";
+import { FaCog, FaExchangeAlt, FaSearch, FaChartBar, FaInfoCircle } from "react-icons/fa";
 
 const Sidebar = () => {
     const SIDEBAR_LINKS = [
@@ -10,6 +11,7 @@ const Sidebar = () => {
         { id: 2, path: '/CargarTransacciones', name: 'Transacciones', icon: FaExchangeAlt },
         { id: 3, path: '/Consultas', name: 'Consultas', icon: FaSearch },
         { id: 4, path: '/Graficas', name: 'Gráficas', icon: FaChartBar },
+        { id: 5, path: '/Sistema', name: 'Sistema', icon: FaInfoCircle }, 
     ];
 
     return (
@@ -17,8 +19,9 @@ const Sidebar = () => {
         <div className='bg-black w-16 md:w-56 fixed left-0 top-0 z-10 h-screen pt-8 px-2'>
             {/* Logo principal */}
             <div className='mb-8 flex justify-center items-center'>
-                <img src={F1} alt="cloud" className='w-28 hidden md:flex rounded-md'/>
-                <img src={F1} alt="cloud" className='w-8 flex md:hidden rounded-md'/>
+                {/* TÉCNICA A: Contenedor claro. Agregamos 'bg-white' y un padding 'p-2' para que actúe como un marco. */}
+                <img src={Escudo} alt="Logo USAC" className='w-45 hidden md:flex rounded-lg bg-white shadow-md'/>
+                <img src={Escudo} alt="Logo USAC" className='w-10 flex md:hidden rounded-lg bg-white p-1'/>
             </div>
             {/* Logo principal */}
 
@@ -27,16 +30,14 @@ const Sidebar = () => {
                 {SIDEBAR_LINKS.map((link, index) => (
                     <li 
                         key={index}
-                        // Texto blanco y el hover usa el gris específico de tu paleta
                         className='text-white font-medium rounded-md py-2 px-5 hover:bg-[#525252] transition-colors duration-200'
                     >
                         <Link 
                             to={link.path}
                             className='flex justify-center md:justify-start items-center md:space-x-5'
                         >
-                            {/* Renderizamos el icono como componente */}
                             <span className="text-xl"><link.icon /></span>
-                            <span className='text-white text-xl hidden md:flex'>{link.name}</span>
+                            <span className='text-white text-xl hidden md:flex text-left'>{link.name}</span>
                         </Link>
                     </li>
                 ))}

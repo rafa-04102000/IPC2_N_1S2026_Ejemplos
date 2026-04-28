@@ -5,6 +5,14 @@ import { sileo, Toaster } from "sileo";
 
 import url from '../../Api/url';
 
+import Loader from './Loaders/CuervoLoader';
+import TuxLoader from './Loaders/TuxLoader';
+import OsoLoader from './Loaders/OsoLoader';
+import BuhoLoader from './Loaders/BuhoLoader';
+import CochinoLoader from './Loaders/CochinoLoader';
+import HeladoLoader from './Loaders/HeladoLoader';
+import PreCargaLoader from './Loaders/PreCargaLoader';
+
 const CargaConfig = () => {
     // Estados para manejar el archivo, la respuesta y el estado de la petición
     const [file, setFile] = useState(null);
@@ -166,6 +174,15 @@ const CargaConfig = () => {
                     )}
                 </div>
             </div>
+            {/* <div>
+                <Loader />
+                <TuxLoader />
+                <OsoLoader />
+                <BuhoLoader />
+                <CochinoLoader />
+                <HeladoLoader />
+                <PreCargaLoader />
+            </div> */}
         </>
     );
 }

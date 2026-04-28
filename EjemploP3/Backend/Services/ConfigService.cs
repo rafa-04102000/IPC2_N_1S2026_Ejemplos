@@ -115,6 +115,16 @@ namespace Backend.Services
             //return declaracion + respuestaXML.ToString();
         }
 
+        // Este metodo borrara todos los datos de las listas de clientes, bancos, facturas y pagos
+        public string BorrarDatos()
+        {
+            _repositorio.Clientes.Clear();
+            _repositorio.Bancos.Clear();
+            _repositorio.Facturas.Clear();
+            _repositorio.Pagos.Clear();
+            return "Todos los datos han sido borrados exitosamente.";
+
+        }
     }
     // Esta clase se asegura de que el StringWriter utilice UTF-8 al generar el XML de respuesta
     public class Utf8StringWriter : StringWriter

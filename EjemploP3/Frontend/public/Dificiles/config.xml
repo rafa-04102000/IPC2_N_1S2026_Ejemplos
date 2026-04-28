@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <clientes>
+    <cliente>
+      <NIT>231956-4</NIT>
+      <nombre>Supermercado Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>950753-8</NIT>
+      <nombre>Distribuidora El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>687253-2</NIT>
+      <nombre>Abarrotería El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>366385-8</NIT>
+      <nombre>Industrias El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>999449-2</NIT>
+      <nombre>Constructora El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>765452-9</NIT>
+      <nombre>Industrias Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>755575-0</NIT>
+      <nombre>Ferretería Avanzada S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>907199-2</NIT>
+      <nombre>Distribuidora Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>292887-2</NIT>
+      <nombre>Tecnología Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>825917-4</NIT>
+      <nombre>Librería Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>644123-3</NIT>
+      <nombre>Librería Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>656349-2</NIT>
+      <nombre>Distribuidora Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>564769-5</NIT>
+      <nombre>Librería G&amp;T S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>144386-4</NIT>
+      <nombre>Ferretería Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>130645-0</NIT>
+      <nombre>Farmacia El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>524408-5</NIT>
+      <nombre>Librería San Carlos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>121143-6</NIT>
+      <nombre>Industrias Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>730776-5</NIT>
+      <nombre>Farmacia Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>495293-4</NIT>
+      <nombre>Distribuidora Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>150653-8</NIT>
+      <nombre>Comercial Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>472836-3</NIT>
+      <nombre>Constructora Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>626408-4</NIT>
+      <nombre>Librería Avanzada S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>785968-6</NIT>
+      <nombre>Industrias Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>293605-3</NIT>
+      <nombre>Tecnología Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>429779-1</NIT>
+      <nombre>Distribuidora El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>275307-2</NIT>
+      <nombre>Comercial Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>924767-4</NIT>
+      <nombre>Farmacia Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>793332-2</NIT>
+      <nombre>Supermercado El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>865745-5</NIT>
+      <nombre>Distribuidora El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>777730-9</NIT>
+      <nombre>Comercial Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>597880-3</NIT>
+      <nombre>Industrias El Estudiante S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>975167-3</NIT>
+      <nombre>Industrias Avanzada S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>622397-8</NIT>
+      <nombre>Ferretería San Carlos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>725989-5</NIT>
+      <nombre>Constructora El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>579512-1</NIT>
+      <nombre>Distribuidora Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>944872-2</NIT>
+      <nombre>Distribuidora Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>124458-8</NIT>
+      <nombre>Librería Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>195637-3</NIT>
+      <nombre>Ferretería Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>195485-7</NIT>
+      <nombre>Supermercado El Estudiante S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>350986-2</NIT>
+      <nombre>Ferretería El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>690983-6</NIT>
+      <nombre>Distribuidora El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>832720-4</NIT>
+      <nombre>Supermercado Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>276606-5</NIT>
+      <nombre>Librería El Estudiante S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>865773-7</NIT>
+      <nombre>Farmacia Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>784458-3</NIT>
+      <nombre>Constructora El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>641298-0</NIT>
+      <nombre>Abarrotería Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>344926-2</NIT>
+      <nombre>Distribuidora El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>169372-4</NIT>
+      <nombre>Supermercado Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>410479-2</NIT>
+      <nombre>Comercial El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>572115-9</NIT>
+      <nombre>Constructora San Carlos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>705986-7</NIT>
+      <nombre>Abarrotería El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>130809-0</NIT>
+      <nombre>Farmacia Avanzada S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>620433-4</NIT>
+      <nombre>Distribuidora Avanzada S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>497153-0</NIT>
+      <nombre>Distribuidora Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>528588-8</NIT>
+      <nombre>Distribuidora G&amp;T S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>859811-3</NIT>
+      <nombre>Ferretería El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>410424-4</NIT>
+      <nombre>Abarrotería Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>987577-1</NIT>
+      <nombre>Comercial El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>986452-5</NIT>
+      <nombre>Comercial Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>663962-9</NIT>
+      <nombre>Comercial Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>968743-0</NIT>
+      <nombre>Farmacia Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>160131-7</NIT>
+      <nombre>Constructora El Estudiante S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>496148-5</NIT>
+      <nombre>Tecnología Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>903943-9</NIT>
+      <nombre>Industrias Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>427694-5</NIT>
+      <nombre>Abarrotería Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>652339-0</NIT>
+      <nombre>Comercial Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>755754-5</NIT>
+      <nombre>Tecnología El Estudiante S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>738754-5</NIT>
+      <nombre>Constructora El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>481197-2</NIT>
+      <nombre>Industrias El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>844555-6</NIT>
+      <nombre>Industrias Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>796504-5</NIT>
+      <nombre>Librería Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>943774-1</NIT>
+      <nombre>Distribuidora Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>347908-7</NIT>
+      <nombre>Ferretería Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>897561-2</NIT>
+      <nombre>Librería G&amp;T S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>501962-4</NIT>
+      <nombre>Tecnología San Carlos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>651671-6</NIT>
+      <nombre>Distribuidora San Carlos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>576403-9</NIT>
+      <nombre>Librería El Estudiante S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>527501-1</NIT>
+      <nombre>Tecnología Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>857685-1</NIT>
+      <nombre>Ferretería G&amp;T S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>764198-9</NIT>
+      <nombre>Abarrotería El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>283581-0</NIT>
+      <nombre>Distribuidora Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>858938-7</NIT>
+      <nombre>Supermercado Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>177423-7</NIT>
+      <nombre>Librería El Estudiante S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>649471-1</NIT>
+      <nombre>Supermercado Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>382280-7</NIT>
+      <nombre>Industrias Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>756684-1</NIT>
+      <nombre>Supermercado G&amp;T S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>431702-6</NIT>
+      <nombre>Librería Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>583979-5</NIT>
+      <nombre>Distribuidora San Carlos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>866201-5</NIT>
+      <nombre>Constructora Los Altos S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>976853-2</NIT>
+      <nombre>Supermercado El Quetzal S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>151579-8</NIT>
+      <nombre>Farmacia Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>457304-2</NIT>
+      <nombre>Farmacia El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>637707-2</NIT>
+      <nombre>Constructora Central S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>930409-1</NIT>
+      <nombre>Ferretería Avanzada S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>321415-7</NIT>
+      <nombre>Distribuidora El Sol S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>488626-3</NIT>
+      <nombre>Supermercado Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>857998-5</NIT>
+      <nombre>Industrias Chapina S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>436746-2</NIT>
+      <nombre>Abarrotería Guatemalteca S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>633722-8</NIT>
+      <nombre>Constructora G&amp;T S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>441305-9</NIT>
+      <nombre>Supermercado Avanzada S.A.</nombre>
+    </cliente>
+    <cliente>
+      <NIT>231956-4</NIT>
+      <nombre>Supermercado Los Altos S.A. (Actualizado)</nombre>
+    </cliente>
+    <cliente>
+      <NIT>950753-8</NIT>
+      <nombre>Distribuidora El Sol S.A. (Actualizado)</nombre>
+    </cliente>
+    <cliente>
+      <NIT>687253-2</NIT>
+      <nombre>Abarrotería El Quetzal S.A. (Actualizado)</nombre>
+    </cliente>
+    <cliente>
+      <NIT>366385-8</NIT>
+      <nombre>Industrias El Sol S.A. (Actualizado)</nombre>
+    </cliente>
+    <cliente>
+      <NIT>999449-2</NIT>
+      <nombre>Constructora El Quetzal S.A. (Actualizado)</nombre>
+    </cliente>
+  </clientes>
+  <bancos>
+    <banco>
+      <codigo>1</codigo>
+      <nombre>Banco Industrial</nombre>
+    </banco>
+    <banco>
+      <codigo>2</codigo>
+      <nombre>BanRural</nombre>
+    </banco>
+    <banco>
+      <codigo>3</codigo>
+      <nombre>BAM</nombre>
+    </banco>
+    <banco>
+      <codigo>4</codigo>
+      <nombre>GyT Continental</nombre>
+    </banco>
+    <banco>
+      <codigo>5</codigo>
+      <nombre>Banco Promerica</nombre>
+    </banco>
+    <banco>
+      <codigo>6</codigo>
+      <nombre>Bantrab</nombre>
+    </banco>
+    <banco>
+      <codigo>7</codigo>
+      <nombre>Banco de Antigua</nombre>
+    </banco>
+    <banco>
+      <codigo>8</codigo>
+      <nombre>BAC Credomatic</nombre>
+    </banco>
+    <banco>
+      <codigo>9</codigo>
+      <nombre>Banco Ficohsa</nombre>
+    </banco>
+    <banco>
+      <codigo>10</codigo>
+      <nombre>CHN</nombre>
+    </banco>
+    <banco>
+      <codigo>1</codigo>
+      <nombre>Banco Industrial de Guatemala</nombre>
+    </banco>
+  </bancos>
+</config>

@@ -16,6 +16,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Backend.Controllers.ConfigController",
+    "Method": "Borrar",
+    "RelativePath": "api/Config/resetear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Backend.Controllers.ConsultaController",
     "Method": "GetEstadoCuenta",
     "RelativePath": "api/Consulta/cliente/{nit}",

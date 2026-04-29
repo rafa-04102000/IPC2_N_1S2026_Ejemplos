@@ -1,5 +1,5 @@
 import React from "react";
-import tux from "/Linux4.png";
+import tux from "/Tux.png";
 
 const TuxLoader = () => {
   return (

@@ -1,0 +1,37 @@
+services:
+  # ----------------------------------------------------
+  # 1. SERVICIO DEL BACKEND (.NET)
+  # ----------------------------------------------------
+  backend:
+    image: backend_p3_ipc2:latest
+    container_name: backend_p3
+    # No es estrictamente necesario exponer puertos al exterior porque
+    # el frontend se comunica con él de forma interna.
+    # Descomenta las siguientes dos líneas solo si quieres probar
+    # la API directamente desde Postman/Swagger en localhost:8080
+    # ports:
+    #   - "8080:8080"
+    networks:
+      - mi_red_ipc2
+
+  # ----------------------------------------------------
+  # 2. SERVICIO DEL FRONTEND (React + Nginx)
+  # ----------------------------------------------------
+  frontend:
+    image: frontend_p3_ipc2:latest
+    container_name: frontend_p3
+    ports:
+      - "80:80" # Mapea el puerto 80 de tu PC al puerto 80 del Nginx en el contenedor
+    depends_on:
+      - backend # Le dice a Docker que levante primero el backend
+    networks:
+      - mi_red_ipc2
+
+# ----------------------------------------------------
+# 3. RED INTERNA
+# ----------------------------------------------------
+# Crea una red privada para que "frontend" y "backend"
+# se encuentren por su nombre
+networks:
+  mi_red_ipc2:
+    driver: bridge

@@ -1,0 +1,33 @@
+# Directorios de compilación y salida (Crucial para evitar conflictos)
+**/bin/
+**/obj/
+**/out/
+**/publish/
+
+# Archivos de configuración de IDEs (Visual Studio / VS Code)
+.vs/
+.vscode/
+**/*.user
+**/*.suo
+**/*.dbmdl
+
+# Control de versiones
+.git/
+.gitignore
+
+# Docker (No necesitas el Dockerfile dentro de la propia imagen)
+Dockerfile*
+.dockerignore
+docker-compose*
+.docker/
+
+# Archivos de configuración local y secretos
+# Es mejor dejar que el contenedor use sus propias variables de entorno
+appsettings.Development.json
+*.secrets.json
+.env
+
+# Logs y archivos temporales
+**/logs/
+*.log
+.DS_Store
